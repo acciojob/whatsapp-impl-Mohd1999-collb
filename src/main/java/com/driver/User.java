@@ -1,13 +1,13 @@
 package com.driver;
 
 import com.fasterxml.jackson.annotation.JsonAnyGetter;
-import lombok.Getter;
-import lombok.Setter;
+// import lombok.Getter;
+// import lombok.Setter;
 
 import java.util.Objects;
 
-@Getter
-@Setter
+// @Getter
+// @Setter
 public class User {
     private String name;
     private String mobile;
@@ -16,6 +16,22 @@ public class User {
         this.name = name;
         this.mobile = mobile;
     }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setMobile(String mobile) {
+        this.mobile = mobile;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getMobile() {
+        return mobile;
+    }    
 
     @Override
     public boolean equals(Object o) {

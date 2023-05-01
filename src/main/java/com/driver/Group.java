@@ -1,12 +1,12 @@
 package com.driver;
 
-import lombok.Getter;
-import lombok.Setter;
+// import lombok.Getter;
+// import lombok.Setter;
 
 import java.util.Objects;
 
-@Getter
-@Setter
+// @Getter
+// @Setter
 public class Group {
     private String name;
     private int numberOfParticipants;
@@ -14,6 +14,22 @@ public class Group {
     public Group(String name, int numberOfParticipants) {
         this.name = name;
         this.numberOfParticipants = numberOfParticipants;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setNumberOfParticipants(int numberOfParticipants) {
+        this.numberOfParticipants = numberOfParticipants;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getNumberOfParticipants() {
+        return numberOfParticipants;
     }
 
     @Override
